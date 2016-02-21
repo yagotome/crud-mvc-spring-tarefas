@@ -27,6 +27,14 @@
 		<property name="password" value="yagotome" />
 	</bean>
 	
+	
+	<bean class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+		<property name="dataSource" ref="sqlServerDataSource" />
+		<property name="jpaVendorAdapter">
+			<bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter"/>
+		</property>
+	</bean>	
+	
 	<mvc:interceptors>
 		<bean class="interceptor.AutorizadorInterceptor" />
 	</mvc:interceptors>
