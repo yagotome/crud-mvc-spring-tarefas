@@ -38,7 +38,7 @@ public class TarefaDAO {
 			stmt.setDate(3, tarefa.getDataFinalizacao() == null ? null : new Date(tarefa.getDataFinalizacao().getTimeInMillis()));
 			stmt.execute();
 		} catch (SQLException e) {
-			throw new RuntimeException("Erro na inserção. Erro: " + e.getMessage());
+			throw new RuntimeException("Erro na inserï¿½ï¿½o. Erro: " + e.getMessage());
 		}
 	}
 	
@@ -71,7 +71,7 @@ public class TarefaDAO {
 			stmt.setLong(1, id);
 			stmt.execute();
 		} catch (SQLException e) {
-			throw new RuntimeException("Erro na remoção. Erro: " + e.getMessage());
+			throw new RuntimeException("Erro na remoï¿½ï¿½o. Erro: " + e.getMessage());
 		}
 	}
 	
@@ -108,7 +108,7 @@ public class TarefaDAO {
 			stmt.setLong(4, tarefa.getId());
 			stmt.execute();
 		} catch (SQLException e) {
-			throw new RuntimeException("Erro na inserção. Erro: " + e.getMessage());
+			throw new RuntimeException("Erro na inserï¿½ï¿½o. Erro: " + e.getMessage());
 		}
 	}
 	
@@ -121,7 +121,7 @@ public class TarefaDAO {
 			stmt.setLong(3, id);
 			stmt.execute();
 		} catch (SQLException e) {
-			throw new RuntimeException("Erro na finalização de tarefa. Erro: " + e.getMessage());
+			throw new RuntimeException("Erro na finalizaï¿½ï¿½o de tarefa. Erro: " + e.getMessage());
 		}
 	}
 			
